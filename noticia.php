@@ -1,7 +1,6 @@
 <?php
 
 include_once "./vendor/autoload.php";
-include_once "./lib/menu.php";
 $id = isset($_GET['id']) ? $_GET['id'] : "";
 ?>
 <!DOCTYPE html>
@@ -17,6 +16,13 @@ $id = isset($_GET['id']) ? $_GET['id'] : "";
     <link rel="stylesheet" href="./vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./vendor/fortawesome/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+	<style>
+        body {
+            background-image: url('./assets/img/2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>

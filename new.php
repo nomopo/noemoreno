@@ -3,9 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Noticias</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias | Noé Moreno</title>
+    <link rel="icon" href="./assets/images/logo.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/fortawesome/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+	<style>
+        body {
+            background-image: url('./assets/img/2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
     <script src="./tinymce/tinymce.min.js"></script>
     <script>
       tinymce.init({
@@ -22,6 +34,10 @@
 </head>
 
 <body>
+<?php
+    include_once "./lib/menu.php";
+    //include_once './lib/filtro.php';
+    ?>
     <!-- Formulario de Entrada de Datos -->
     <div class="container mt-5">
         <div class="row">
@@ -61,7 +77,9 @@
             </div>
         </div>
     </div>
-
+    <?php
+    include_once "./lib/footer.php";
+    ?>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -83,6 +101,8 @@
         }
       });
     </script>
+    <script src="./vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
